@@ -4,7 +4,7 @@ buildscript {
       jcenter()
       google()
       maven{
-        url 'I:/github/hugo/repo/'
+        url LOCAL_REPO_URL
       }
     }
 
@@ -20,7 +20,7 @@ dependencies {
   repositories {
     mavenCentral()
     maven{
-      url 'I:/github/hugo/repo/'
+      url LOCAL_REPO_URL
     }
   }
 }
