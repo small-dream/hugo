@@ -2,9 +2,11 @@ buildscript {
   dependencies {
     repositories {
       jcenter()
+      mavenCentral()
       google()
       maven{
-        url LOCAL_REPO_URL
+//        url LOCAL_REPO_URL
+        url "https://bintray.com/jiangxu/maven/"
       }
     }
 
@@ -20,7 +22,8 @@ dependencies {
   repositories {
     mavenCentral()
     maven{
-      url LOCAL_REPO_URL
+      //        url LOCAL_REPO_URL
+      url "https://bintray.com/jiangxu/maven/"
     }
   }
 }
