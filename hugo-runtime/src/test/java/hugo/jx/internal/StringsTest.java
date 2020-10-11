@@ -1,16 +1,19 @@
-package hugo.weaving.internal;
+package hugo.jx.internal;
+
+import static org.junit.Assert.assertEquals;
 
 import java.math.BigInteger;
 import org.junit.Test;
 
-import static org.junit.Assert.assertEquals;
-
 public final class StringsTest {
-  @Test public void nullValue() {
-    assertEquals("null", Strings.toString(null));
-  }
 
-  @Test public void string() {
+    @Test
+    public void nullValue() {
+        assertEquals("null", Strings.toString(null));
+    }
+
+    @Test
+    public void string() {
     assertEquals("\"String\"", Strings.toString("String"));
   }
 

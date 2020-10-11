@@ -1,4 +1,4 @@
-package hugo.weaving.plugin
+package hugo.jx.plugin
 
 import com.android.build.gradle.AppPlugin
 import com.android.build.gradle.LibraryPlugin
@@ -26,9 +26,9 @@ class HugoPlugin implements Plugin<Project> {
     }
 
     project.dependencies {
-      debugCompile 'com.jx.hugo:hugo-runtime:1.3.0'
+      debugCompile 'com.jx.hugo:hugo-runtime:1.1.0'
       debugCompile 'org.aspectj:aspectjrt:1.9.6'
-      compile 'com.jx.hugo:hugo-annotations:1.3.0'
+      compile 'com.jx.hugo:hugo-annotations:1.1.0'
     }
 
     project.extensions.create('hugo', HugoExtension)

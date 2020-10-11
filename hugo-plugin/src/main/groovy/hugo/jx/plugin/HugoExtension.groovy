@@ -1,4 +1,4 @@
-package hugo.weaving.plugin
+package hugo.jx.plugin
 
 class HugoExtension {
   def enabled = true

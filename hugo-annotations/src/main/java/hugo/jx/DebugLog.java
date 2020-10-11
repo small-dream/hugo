@@ -1,13 +1,15 @@
-package hugo.weaving;
-
-import java.lang.annotation.Retention;
-import java.lang.annotation.Target;
+package hugo.jx;
 
 import static java.lang.annotation.ElementType.CONSTRUCTOR;
 import static java.lang.annotation.ElementType.METHOD;
 import static java.lang.annotation.ElementType.TYPE;
 import static java.lang.annotation.RetentionPolicy.CLASS;
 
-@Target({TYPE, METHOD, CONSTRUCTOR}) @Retention(CLASS)
+import java.lang.annotation.Retention;
+import java.lang.annotation.Target;
+
+@Target({TYPE, METHOD, CONSTRUCTOR})
+@Retention(CLASS)
 public @interface DebugLog {
+
 }
