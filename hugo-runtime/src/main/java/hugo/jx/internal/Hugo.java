@@ -1,10 +1,10 @@
-package hugo.weaving.internal;
+package hugo.jx.internal;
 
 import android.os.Build;
 import android.os.Looper;
 import android.os.Trace;
 import android.util.Log;
-
+import java.util.concurrent.TimeUnit;
 import org.aspectj.lang.JoinPoint;
 import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.Signature;
@@ -14,13 +14,11 @@ import org.aspectj.lang.annotation.Pointcut;
 import org.aspectj.lang.reflect.CodeSignature;
 import org.aspectj.lang.reflect.MethodSignature;
 
-import java.util.concurrent.TimeUnit;
-
 @Aspect
 public class Hugo {
   private static volatile boolean enabled = true;
 
-  @Pointcut("within(@hugo.weaving.DebugLog *)")
+  @Pointcut("within(@hugo.jx.DebugLog *)")
   public void withinAnnotatedClass() {}
 
   @Pointcut("execution(!synthetic * *(..)) && withinAnnotatedClass()")
@@ -29,10 +27,10 @@ public class Hugo {
   @Pointcut("execution(!synthetic *.new(..)) && withinAnnotatedClass()")
   public void constructorInsideAnnotatedType() {}
 
-  @Pointcut("execution(@hugo.weaving.DebugLog * *(..)) || methodInsideAnnotatedType()")
+  @Pointcut("execution(@hugo.jx.DebugLog * *(..)) || methodInsideAnnotatedType()")
   public void method() {}
 
-  @Pointcut("execution(@hugo.weaving.DebugLog *.new(..)) || constructorInsideAnnotatedType()")
+  @Pointcut("execution(@hugo.jx.DebugLog *.new(..)) || constructorInsideAnnotatedType()")
   public void constructor() {}
 
   public static void setEnabled(boolean enabled) {

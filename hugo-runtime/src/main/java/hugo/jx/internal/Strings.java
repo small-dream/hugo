@@ -1,4 +1,4 @@
-package hugo.weaving.internal;
+package hugo.jx.internal;
 
 import java.util.Arrays;
 import java.util.HashSet;

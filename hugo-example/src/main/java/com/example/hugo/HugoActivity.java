@@ -5,7 +5,7 @@ import android.os.Bundle;
 import android.os.SystemClock;
 import android.util.Log;
 import android.widget.TextView;
-import hugo.weaving.DebugLog;
+import hugo.jx.DebugLog;
 
 public class HugoActivity extends Activity {
   @Override protected void onCreate(Bundle savedInstanceState) {
