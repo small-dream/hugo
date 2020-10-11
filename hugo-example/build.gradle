@@ -25,6 +25,10 @@ dependencies {
   }
 }
 
+hugo {
+  enabled true
+}
+
 android {
   compileSdkVersion 29
   defaultConfig {
