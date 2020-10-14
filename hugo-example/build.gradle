@@ -2,9 +2,11 @@ buildscript {
   dependencies {
     repositories {
       jcenter()
+      mavenCentral()
       google()
-      maven{
-        url LOCAL_REPO_URL
+      maven {
+//        url LOCAL_REPO_URL
+        url "https://dl.bintray.com/jiangxu/maven/"
       }
     }
 
@@ -19,8 +21,8 @@ apply plugin: 'hugo'
 dependencies {
   repositories {
     mavenCentral()
-    maven{
-      url LOCAL_REPO_URL
+    maven {
+      url "https://dl.bintray.com/jiangxu/maven/"
     }
   }
 }
